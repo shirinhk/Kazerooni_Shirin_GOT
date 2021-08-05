@@ -4,8 +4,8 @@
 
 ## Using JavaScript to complete the Project.
 ## 1. Few houses, and their sigils / pictures added.
-##2. Required house details added to the multidimensional array.
-##3. Added codes to create custom controls for play, pause, volume etc.
+## 2. Required house details added to the multidimensional array.
+## 3. Added codes to create custom controls for play, pause, volume etc.
 
 ## *No special requirements is needed.
 
