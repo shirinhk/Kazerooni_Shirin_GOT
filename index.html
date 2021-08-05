@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GOT House Demo</title>
+<link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/GOT_master.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+    <main id="container">
+
+    <section id="imageContainer">
+      <h2 class="hidden"> House Images Container</h2>
+    	<div id="houseImages" style="right: 0"> <!-- add in all of the images to make a scrolling "banner" -->
+    		<img src="images/stark.jpg" alt="Stark Pic"/>
+    		<img src="images/baratheon.jpg" alt="Baratheon tark Pic"/>
+    		<img src="images/lannister.jpg" alt="Lannister Pic"/>
+    		<img src="images/tully.jpg" alt="Tully Pic"/>
+    		<img src="images/greyjoy.jpg" alt="Greyjoy Pic"/>
+    		<img src="images/arryn.jpg" alt="Arryn Pic"/>
+        <img src="images/targaryen.jpg" alt="Targaryen Pic"/>
+        <img src="images/frey.jpg" alt="Frey Pic"/>
+        <img src="images/tyrell.jpg" alt="Tyrell Pic"/>
+      </div>
+    </section>
+
+    <nav id="bottomNav">
+      <h2 class="hidden"> Sigil Container</h2>
+    	<ul id="navList">
+        	<!-- custom data attribute, allowing to pass custom data https://developer.mozilla.org/en/docs/Web/API/HTMLElement/dataset -->
+            <li><div class="sigilContainer stark" data-offset="0"></div></li>
+            <li><div class="sigilContainer baratheon" data-offset="1"></div></li>
+            <li><div class="sigilContainer lannister" data-offset="2"></div></li>
+            <li><div class="sigilContainer tully" data-offset="3"></div></li>
+            <li><div class="sigilContainer greyjoy" data-offset="4"></div></li>
+            <li><div class="sigilContainer arryn" data-offset="5"></div></li>
+            <li><div class="sigilContainer targaryen" data-offset="6"></div></li>
+            <li><div class="sigilContainer frey" data-offset="7"></div></li>
+            <li><div class="sigilContainer tyrell" data-offset="8"></div></li>
+        </ul>
+    </nav>
+
+    <h1 class="house-name">clever name goes here</h1><!-- replace this with the house name -->
+    <p class="house-info"></p><!-- replace this with house details (github gist) -->
+
+    <section class="lightbox">
+      <h2 class="hidden"> Lightbox Video Container</h2>
+      <span class="close-button">x</span>
+      <video src="video/House-Stark.mp4" id="myvideo"></video>
+
+      <div id="controls">
+          <a onclick="playPause()" class="vidCont"><img src="images/playIcon.png" alt="Play/Pause Icon"></a>
+          <a onclick="stopVideo()" class="vidCont"><img src="images/stopIcon.png" alt="Stop Icon"></a>
+          <a onclick="decreaseVolume()" class="vidCont"><img src="images/volDownIcon.png" alt="Volume Down Icon"></a>
+          <a onclick="increaseVolume()" class="vidCont"><img src="images/volUpIcon.png" alt="Volume Up Icon"></a>
+          <a onclick="muteVolume()" class="vidCont"><img src="images/muteIcon.png" alt="Mute Icon"></a>
+      </div>
+
+    </section>
+</main>  <!--end mainContainer-->
+
+<script src="js/main.js"></script>
+</body>
+</html>
